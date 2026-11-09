@@ -1,0 +1,91 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bg: #08090d;
+  --color-surface: #0e1017;
+  --color-line: #1d2130;
+  --color-ink: #ece9f4;
+  --color-mute: #9096aa;
+  --color-heat-1: #3b1f8f;
+  --color-heat-2: #c0268f;
+  --color-heat-3: #ff6a1a;
+  --color-heat-4: #ffd23f;
+  --font-display: "Bricolage Grotesque", ui-sans-serif, system-ui, sans-serif;
+  --font-body: "Hanken Grotesk", ui-sans-serif, system-ui, sans-serif;
+  --font-hero: "Sora", "Bricolage Grotesque", ui-sans-serif, system-ui, sans-serif;
+}
+
+@keyframes sticker-float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+.sticker-float {
+  animation: sticker-float 5s ease-in-out infinite;
+}
+
+html {
+  background: var(--color-bg);
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--color-bg);
+  color: var(--color-ink);
+  font-family: var(--font-body);
+  font-size: 1.0625rem;
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background: var(--color-heat-3);
+  color: var(--color-bg);
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-heat-4);
+  outline-offset: 4px;
+  border-radius: 2px;
+}
+
+.fade-to-bg {
+  background: linear-gradient(to top, var(--color-bg), transparent);
+}
+
+.heat-bar {
+  background: linear-gradient(
+    90deg,
+    var(--color-heat-1),
+    var(--color-heat-2),
+    var(--color-heat-3),
+    var(--color-heat-4)
+  );
+}
+
+.heat-text {
+  background: linear-gradient(
+    90deg,
+    var(--color-heat-2),
+    var(--color-heat-3),
+    var(--color-heat-4)
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .sticker-float {
+    animation: none;
+  }
+}

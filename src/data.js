@@ -67,7 +67,7 @@ export const work = [
     summary: 'A computer vision model that finds defects in industrial solar panels.',
     points: [
       'Built and evaluated a deep learning model for defect detection on industrial solar panels.',
-      'Prepared the dataset and analysed results for publication.',
+
     ],
     stack: ['Deep learning', 'Computer vision'],
   },

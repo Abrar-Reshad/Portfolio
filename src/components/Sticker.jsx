@@ -39,7 +39,7 @@ export default function Sticker({
         <div
           className={`flex items-center justify-center border-[3px] border-white font-semibold shadow-[5px_5px_0_rgba(0,0,0,0.6)] ${variants[variant]} ${
             shape === 'square'
-              ? 'size-16 rounded-2xl text-4xl sm:size-20 sm:text-5xl'
+              ? 'size-14 rounded-2xl text-3xl sm:size-16 sm:text-4xl lg:size-20 lg:text-5xl'
               : 'gap-2 rounded-full px-4 py-2 text-sm sm:px-5 sm:py-2.5 sm:text-base'
           }`}
         >

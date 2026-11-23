@@ -1,5 +1,7 @@
 # Portfolio – Syed Abrar Reshad
 
+🌐 **Visit the live portfolio:** [abrarreshad.vercel.app](https://abrarreshad.vercel.app/)
+
 React + Tailwind CSS v4 + Framer Motion, built with Vite.
 
 ## Run locally
